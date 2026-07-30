@@ -76,7 +76,7 @@ a:hover {
   padding-left: 1.25rem;
 }
 
-.econ-bio .blox-resume-biography-3,
+.econ-bio .prose,
 .econ-research .prose {
   max-width: 900px;
   margin-right: auto;
@@ -89,52 +89,117 @@ a:hover {
   background: var(--econ-white) !important;
 }
 
-.econ-bio h1 {
-  margin-bottom: 0.3rem;
+/*
+  Jackson-style introduction:
+  photograph on the left and all identifying information on the right.
+*/
+
+.econ-bio .prose {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.econ-profile {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  column-gap: 2.5rem;
+  align-items: start;
+}
+
+/* ---------------- PROFILE PHOTO ---------------- */
+
+.econ-profile-photo {
+  width: 220px;
+}
+
+.econ-profile-photo img {
+  display: block;
+  width: 220px;
+  height: auto;
+  margin: 0;
+  border-radius: 4px;
+  box-shadow: none;
+}
+
+/* ---------------- PROFILE TEXT ---------------- */
+
+.econ-profile-text {
+  min-width: 0;
+  text-align: left;
+}
+
+.econ-profile-text h1 {
+  margin: 0 0 0.35rem !important;
   color: var(--econ-text);
   font-size: 2.3rem;
   font-weight: 650;
   letter-spacing: -0.025em;
-  line-height: 1.15;
+  line-height: 1.1;
 }
 
-/* Remove the Professional Summary heading. */
-#about h2 {
-  display: none !important;
-}
-
-.econ-bio h3 {
-  margin-top: 0.2rem;
-  margin-bottom: 0.35rem;
-  color: var(--econ-muted);
-  font-size: 1.05rem;
+.econ-profile-role {
+  margin: 0 0 0.1rem !important;
+  color: var(--econ-text);
+  font-size: 1.06rem;
   font-weight: 500;
+  line-height: 1.45;
 }
 
-.econ-bio .bio-text {
-  max-width: 640px;
-  margin-top: 1.15rem;
+.econ-profile-affiliation {
+  margin: 0 0 1.25rem !important;
+  color: var(--econ-muted);
+  font-size: 0.98rem;
+  line-height: 1.45;
+}
+
+.econ-profile-affiliation a {
+  color: var(--econ-muted);
+}
+
+.econ-profile-affiliation a:hover {
+  color: var(--econ-link);
+}
+
+/* ---------------- BIOGRAPHY TEXT ---------------- */
+
+.econ-profile-bio {
+  max-width: 650px;
+  color: var(--econ-text);
   font-size: 1rem;
   line-height: 1.65;
 }
 
-.econ-bio .avatar {
-  border-radius: 5px !important;
-  box-shadow: none !important;
+.econ-profile-bio p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
 }
 
-.econ-bio .btn {
-  padding: 0.35rem 0.75rem;
+/* ---------------- CONTACT AND CV ---------------- */
+
+.econ-profile-contact {
+  margin: 1rem 0 0 !important;
+  color: var(--econ-text);
+  font-size: 0.94rem;
+}
+
+.econ-profile-links {
+  margin: 0.8rem 0 0 !important;
+}
+
+.econ-profile-cv {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
   border: 1px solid var(--econ-link);
-  border-radius: 3px !important;
+  border-radius: 3px;
   background: var(--econ-white);
-  box-shadow: none !important;
   color: var(--econ-link);
   font-size: 0.88rem;
   font-weight: 500;
+  line-height: 1.35;
 }
 
-.econ-bio .btn:hover {
+.econ-profile-cv:hover {
   background: var(--econ-link);
   color: var(--econ-white);
   text-decoration: none;
@@ -293,13 +358,21 @@ footer {
     padding-left: 1rem;
   }
 
-  .econ-bio h1 {
-    font-size: 2rem;
+  .econ-profile {
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
   }
 
-  .econ-bio .avatar {
-    width: 150px !important;
-    height: 150px !important;
+  .econ-profile-photo {
+    width: 165px;
+  }
+
+  .econ-profile-photo img {
+    width: 165px;
+  }
+
+  .econ-profile-text h1 {
+    font-size: 2rem;
   }
 
   .paper-title {

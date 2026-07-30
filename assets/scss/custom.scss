@@ -1,1 +1,311 @@
-body { outline: 4px solid red !important; }
+/* ---------------- BASIC COLORS ---------------- */
+
+:root {
+  --econ-text: #24282d;
+  --econ-muted: #626a73;
+  --econ-link: #28547a;
+  --econ-rule: #dfe3e6;
+  --econ-light-background: #f7f8f9;
+  --econ-white: #ffffff;
+}
+
+/* ---------------- GENERAL PAGE ---------------- */
+
+html {
+  scroll-behavior: smooth;
+  font-size: 17px;
+}
+
+body {
+  background: var(--econ-white);
+  color: var(--econ-text);
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Helvetica,
+    Arial,
+    sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--econ-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Prevent anchor links from hiding behind the navbar. */
+
+#about,
+#research {
+  scroll-margin-top: 80px;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+.site-header {
+  background: rgba(255, 255, 255, 0.98) !important;
+  border-bottom: 1px solid var(--econ-rule);
+  box-shadow: none !important;
+}
+
+.site-header .container {
+  max-width: 980px;
+}
+
+.site-header a {
+  color: var(--econ-text) !important;
+  font-size: 0.94rem;
+  font-weight: 500;
+}
+
+.site-header a:hover {
+  color: var(--econ-link) !important;
+  text-decoration: none;
+}
+
+/* ---------------- PAGE WIDTH ---------------- */
+
+.hbb-section {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.econ-bio .blox-resume-biography-3,
+.econ-research .prose {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* ---------------- BIOGRAPHY ---------------- */
+
+.econ-bio {
+  background: var(--econ-white) !important;
+}
+
+.econ-bio h1 {
+  margin-bottom: 0.3rem;
+  color: var(--econ-text);
+  font-size: 2.3rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.econ-bio h2 {
+  display: none;
+}
+
+.econ-bio h3 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.35rem;
+  color: var(--econ-muted);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.econ-bio .bio-text {
+  max-width: 640px;
+  margin-top: 1.15rem;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.econ-bio .avatar {
+  border-radius: 5px !important;
+  box-shadow: none !important;
+}
+
+.econ-bio .btn {
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--econ-link);
+  border-radius: 3px !important;
+  background: var(--econ-white);
+  box-shadow: none !important;
+  color: var(--econ-link);
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.econ-bio .btn:hover {
+  background: var(--econ-link);
+  color: var(--econ-white);
+  text-decoration: none;
+}
+
+/* ---------------- RESEARCH SECTION ---------------- */
+
+.econ-research .prose {
+  max-width: 800px;
+}
+
+.econ-research h2 {
+  margin-top: 0;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--econ-rule);
+  color: var(--econ-text);
+  font-size: 1.7rem;
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+.research-subheading {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1.3rem !important;
+  color: var(--econ-text);
+  font-size: 1.22rem !important;
+  font-weight: 650 !important;
+}
+
+.research-group > .research-subheading:first-child {
+  margin-top: 0 !important;
+}
+
+/* ---------------- INDIVIDUAL PAPERS ---------------- */
+
+.paper-entry {
+  margin-bottom: 2.25rem;
+}
+
+.paper-title {
+  margin-top: 0 !important;
+  margin-bottom: 0.25rem !important;
+  color: var(--econ-text);
+  font-size: 1.08rem !important;
+  font-weight: 650 !important;
+  line-height: 1.4 !important;
+}
+
+.paper-coauthors,
+.paper-status {
+  margin-top: 0 !important;
+  margin-bottom: 0.2rem !important;
+  color: var(--econ-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.paper-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.45rem;
+  margin-top: 0.65rem;
+}
+
+/* ---------------- PAPER AND ABSTRACT BUTTONS ---------------- */
+
+.paper-button,
+.paper-details > summary {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--econ-link);
+  border-radius: 3px;
+  background: var(--econ-white);
+  color: var(--econ-link);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.35;
+  cursor: pointer;
+  user-select: none;
+}
+
+.paper-button:hover,
+.paper-details > summary:hover {
+  background: var(--econ-link);
+  color: var(--econ-white);
+  text-decoration: none;
+}
+
+.paper-details {
+  margin: 0;
+}
+
+.paper-details > summary {
+  list-style: none;
+}
+
+.paper-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.paper-details > summary::after {
+  content: " +";
+}
+
+.paper-details[open] {
+  flex-basis: 100%;
+  margin-top: 0.35rem;
+}
+
+.paper-details[open] > summary::after {
+  content: " −";
+}
+
+/* ---------------- EXPANDED ABSTRACT ---------------- */
+
+.paper-abstract {
+  max-width: 760px;
+  margin-top: 0.85rem;
+  padding: 0.9rem 1rem;
+  border-left: 2px solid #bdcbd6;
+  background: var(--econ-light-background);
+  color: var(--econ-text);
+  font-size: 0.92rem;
+  line-height: 1.62;
+}
+
+.paper-abstract p {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.paper-abstract p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  border-top: 1px solid var(--econ-rule);
+  background: var(--econ-white) !important;
+  color: var(--econ-muted);
+  font-size: 0.84rem;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+
+  .hbb-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .econ-bio h1 {
+    font-size: 2rem;
+  }
+
+  .econ-bio .avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  .paper-title {
+    font-size: 1.03rem !important;
+  }
+
+  .paper-abstract {
+    padding: 0.8rem;
+  }
+}

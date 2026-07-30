@@ -8,7 +8,7 @@ design:
     padding: ['0', '0', '0', '0']
 
 sections:
- - block: resume-biography
+  - block: resume-biography
     id: about
     content:
       username: admin

@@ -8,23 +8,20 @@ design:
     padding: ['0', '0', '0', '0']
 
 sections:
-  - block: resume-biography-3
+ - block: resume-biography
     id: about
     content:
       username: admin
-      text: ''
       button:
         text: CV
         url: uploads/website_cv_hz.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
     design:
       css_class: econ-bio
       avatar:
         size: medium
         shape: rounded
+      biography:
+        style: "max-width: 640px;"
       spacing:
         padding: ['48px', '0', '28px', '0']
 

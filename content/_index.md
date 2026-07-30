@@ -8,20 +8,69 @@ design:
     padding: ['0', '0', '0', '0']
 
 sections:
-  - block: resume-biography
+  - block: markdown
     id: about
     content:
-      username: admin
-      button:
-        text: CV
-        url: uploads/website_cv_hz.pdf
+      title: ''
+      text: |
+        <div class="econ-profile">
+
+          <div class="econ-profile-photo">
+            <img src="/uploads/hans-zhu.jpg" alt="Hans Zhu">
+          </div>
+
+          <div class="econ-profile-text">
+
+            <h1>Hans Zhu</h1>
+
+            <p class="econ-profile-role">
+              Postdoctoral Researcher
+            </p>
+
+            <p class="econ-profile-affiliation">
+              <a href="https://content.naic.org/research">
+                National Association of Insurance Commissioners,
+                Center for Insurance Policy and Research
+              </a>
+            </p>
+
+            <div class="econ-profile-bio">
+              <p>
+                I am a Postdoctoral Researcher at the National Association
+                of Insurance Commissioners in the Center for Insurance Policy
+                and Research. I graduated this year with a Ph.D. in Economics
+                from Northwestern University. My research fields are Industrial
+                Organization, Health Economics and Insurance Economics. Most
+                countries are facing significant challenges with the provision
+                and financing of long-term care.
+              </p>
+
+              <p>
+                Accordingly, I am interested in studying long-term care and
+                insurance markets to better understand these challenges and
+                potential policy solutions.
+              </p>
+            </div>
+
+            <p class="econ-profile-contact">
+              Email:
+              <a href="mailto:hanszhu2024@u.northwestern.edu">
+                hanszhu2024@u.northwestern.edu
+              </a>
+            </p>
+
+            <p class="econ-profile-links">
+              <a class="econ-profile-cv"
+                 href="/uploads/website_cv_hz.pdf">
+                CV
+              </a>
+            </p>
+
+          </div>
+
+        </div>
     design:
       css_class: econ-bio
-      avatar:
-        size: medium
-        shape: rounded
-      biography:
-        style: "max-width: 640px;"
       spacing:
         padding: ['48px', '0', '28px', '0']
 

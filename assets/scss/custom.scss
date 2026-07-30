@@ -98,8 +98,8 @@ a:hover {
   line-height: 1.15;
 }
 
-/* Remove the Professional Summary heading entirely. */
-.econ-bio .section-subheading {
+/* Remove the Professional Summary heading. */
+#about h2 {
   display: none !important;
 }
 

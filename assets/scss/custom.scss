@@ -383,3 +383,100 @@ footer {
     padding: 0.8rem;
   }
 }
+
+/* =========================================================
+   FINAL HOMEPAGE PROFILE LAYOUT OVERRIDE
+   Keep this at the very bottom of custom.scss.
+   ========================================================= */
+
+#about .prose {
+  width: 100% !important;
+  max-width: 900px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+#about .econ-profile {
+  display: grid !important;
+  grid-template-columns: 210px minmax(0, 1fr) !important;
+  column-gap: 2.5rem !important;
+  align-items: start !important;
+  width: 100% !important;
+}
+
+#about .econ-profile-photo {
+  display: block !important;
+  grid-column: 1 !important;
+  width: 210px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+#about .econ-profile-photo img {
+  display: block !important;
+  width: 210px !important;
+  min-width: 210px !important;
+  max-width: 210px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 4px !important;
+  box-shadow: none !important;
+}
+
+#about .econ-profile-text {
+  display: block !important;
+  grid-column: 2 !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+
+#about .econ-profile-text h1 {
+  margin: 0 0 0.35rem !important;
+  padding: 0 !important;
+  font-size: 2.3rem !important;
+  font-weight: 650 !important;
+  line-height: 1.1 !important;
+  letter-spacing: -0.025em !important;
+}
+
+#about .econ-profile-role {
+  margin: 0 0 0.1rem !important;
+}
+
+#about .econ-profile-affiliation {
+  margin: 0 0 1.25rem !important;
+}
+
+#about .econ-profile-bio {
+  max-width: 650px !important;
+}
+
+#about .econ-profile-bio p {
+  margin-top: 0 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  #about .econ-profile {
+    display: block !important;
+  }
+
+  #about .econ-profile-photo {
+    width: 165px !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  #about .econ-profile-photo img {
+    width: 165px !important;
+    min-width: 165px !important;
+    max-width: 165px !important;
+  }
+
+  #about .econ-profile-text h1 {
+    font-size: 2rem !important;
+  }
+}

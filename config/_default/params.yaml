@@ -5,7 +5,7 @@
 
 # Appearance
 appearance:
-  mode: system
+  mode: light
   color: indigo
   font_size: m
 
@@ -33,19 +33,19 @@ header:
     enable: true
     block: 'navbar'
     fixed_to_top: true
-    show_search: true
-    show_theme_chooser: true
+    show_search: false
+    show_theme_chooser: false
     logo:
       text: 'Hans Zhu'
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Hans Zhu. This work is licensed under {license}'
+    notice: '© {year} Hans Zhu'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization

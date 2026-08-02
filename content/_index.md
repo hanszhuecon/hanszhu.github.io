@@ -168,22 +168,6 @@ sections:
           </div>
         </article>
 
-        <article class="paper-entry">
-          <h4 class="paper-title">Financial-Regulation Pass-through to Consumers in the U.S. Life-Insurance Industry</h4>
-          <p class="paper-coauthors">with <a href="https://sites.google.com/view/paul-hs-kim/home">Paul Kim</a></p>
-
-          <div class="paper-actions">
-            <details class="paper-details">
-              <summary>Abstract</summary>
-              <div class="paper-abstract">
-                <p>Life- and long-term-care insurers back their long-duration liabilities with sizable bond portfolios. Accordingly, solvency regulation effectively restricts the riskiness and expected returns of an insurer's investment portfolio. However, since expected returns govern the profitability of offering insurance, solvency regulation also affects premium pricing. In this paper, we study the pass-through to consumers of a change in solvency regulation in the U.S. life insurance industry.</p>
-                <p>The National Association of Insurance Commissioners increased risk charges for NAIC 2 long-term bonds in 2022. This effectively increased the capital requirements for holding these bonds, reducing their expected returns. We construct a shift-share instrument using the increase in risk charges, with exposure captured by insurers' holdings of NAIC 2 bonds and the extent to which their financial constraints are binding.</p>
-                <p>The instrument will be used to estimate the pass-through from reduced acquisitions of NAIC 2 bonds to higher insurance premiums.</p>
-              </div>
-            </details>
-          </div>
-        </article>
-
         </div>
     design:
       css_class: econ-research

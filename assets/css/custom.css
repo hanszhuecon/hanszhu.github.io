@@ -308,7 +308,7 @@ a:hover {
 
 .paper-details[open] {
   flex-basis: 100%;
-  margin-top: 0.35rem;
+  margin-top: 0 !important;
 }
 
 .paper-details[open] > summary::after {
@@ -574,4 +574,33 @@ footer {
     width: 100% !important;
     max-width: 100% !important;
   }
+}
+
+.paper-actions {
+  display: flex !important;
+  flex-wrap: wrap;
+  align-items: flex-start !important;
+  gap: 0.45rem;
+}
+
+.paper-button,
+.paper-details > summary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  min-height: 2rem;
+  margin: 0 !important;
+  padding: 0.25rem 0.65rem;
+
+  box-sizing: border-box;
+  line-height: 1.2 !important;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.paper-details {
+  align-self: flex-start !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }

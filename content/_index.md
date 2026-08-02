@@ -27,14 +27,15 @@ sections:
         <p>
         I am a Postdoctoral Researcher at the National Association
         of Insurance Commissioners in the Center for Insurance Policy
-        and Research. I graduated this year with a Ph.D. in Economics
+        and Research. In October, I will commence as a Research Fellow at the Melbourne Institute of Applied Economic and Social Research.
+        I graduated in 2025 with a Ph.D. in Economics
         from Northwestern University. My research fields are Industrial
         Organization, Health Economics and Insurance Economics. Most
         countries are facing significant challenges with the provision
         and financing of long-term care.
         </p>
         <p>
-        Accordingly, I am interested in studying long-term care and
+        Accordingly, I am especially interested in studying long-term care and
         insurance markets to better understand these challenges and
         potential policy solutions.
         </p>

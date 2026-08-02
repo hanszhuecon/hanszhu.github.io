@@ -480,3 +480,98 @@ footer {
     font-size: 2rem !important;
   }
 }
+
+/* =========================================================
+   WIDER RESPONSIVE PAGE LAYOUT
+   ========================================================= */
+
+/*
+  Hugo Blox applies max-w-prose to both the outer Markdown
+  container and the inner content. Remove those restrictions.
+*/
+
+.econ-bio .max-w-prose,
+.econ-research .max-w-prose {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Wider biography area on desktop. */
+
+.econ-bio .flex.flex-col.items-center {
+  width: 100% !important;
+  max-width: 1120px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  box-sizing: border-box;
+}
+
+/* Slightly narrower research area for comfortable reading. */
+
+.econ-research .flex.flex-col.items-center {
+  width: 100% !important;
+  max-width: 1040px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  box-sizing: border-box;
+}
+
+.econ-bio .prose,
+.econ-research .prose {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* Let the biography use the available right-hand column. */
+
+#about .econ-profile-bio {
+  width: 100% !important;
+  max-width: 780px !important;
+}
+
+/* Let research entries and expanded abstracts use more width. */
+
+.econ-research .research-group {
+  width: 100% !important;
+  max-width: 1000px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+.econ-research .paper-abstract {
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box;
+}
+
+/* Align the navigation with the wider page. */
+
+.site-header .container {
+  width: 100% !important;
+  max-width: 1120px !important;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+  box-sizing: border-box;
+}
+
+/* Preserve a comfortable, overflow-free mobile layout. */
+
+@media (max-width: 767px) {
+  .econ-bio .flex.flex-col.items-center,
+  .econ-research .flex.flex-col.items-center,
+  .site-header .container {
+    width: 100% !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+  #about .econ-profile-bio,
+  .econ-research .research-group {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}

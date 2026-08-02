@@ -74,7 +74,7 @@ sections:
         </p>
 
         <p class="paper-status">
-        <a href="mailto:hzhu@naic.org?subject=Draft%20request%3A%20Reinsuring%20Private%20Credit%20by%20Private%20Equity">
+        <a href="mailto:hanszhu2024@u.northwestern.edu?subject=Draft%20request%3A%20Reinsuring%20Private%20Credit%20by%20Private%20Equity">
         Email for draft
         </a>
         </p>
@@ -121,7 +121,7 @@ sections:
         <article class="paper-entry">
           <h4 class="paper-title">Limiting For-profit Provision in Nursing Home Markets</h4>
           <p class="paper-coauthors">with <a href="https://hyeinhcho.github.io/">Hyein Cho</a></p>
-          <p class="paper-status">Latest draft: November 2025</p>
+          <p class="paper-status">Latest draft: May 2026</p>
 
           <div class="paper-actions">
             <a class="paper-button" href="/uploads/nursinghomes_draft.pdf">Paper</a>
